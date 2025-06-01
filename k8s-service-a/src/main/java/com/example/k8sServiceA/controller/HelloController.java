@@ -1,4 +1,4 @@
-package com.example.k8s_service_a.controller;
+package com.example.k8sServiceA.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
