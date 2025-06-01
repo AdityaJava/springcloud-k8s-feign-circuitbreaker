@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8s-service-a
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: k8s-service-a
+  template:
+    metadata:
+      labels:
+        app: k8s-service-a
+    spec:
+      containers:
+        - name: k8s-service-a
+          image: aditydud/k8s-service-a:latest
+          ports:
+            - containerPort: 8000
