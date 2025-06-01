@@ -15,7 +15,9 @@ eureka:
 ---
 
 spring:
-  profiles: k8s
+  config:
+    activate:
+      on-profile: k8s
 
 eureka:
   client:

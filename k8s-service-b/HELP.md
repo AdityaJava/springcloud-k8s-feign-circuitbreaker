@@ -15,3 +15,7 @@ docker push aditydud/k8s-service-b:latest
 # Deploy service-b to Kubernetes
 kubectl apply -f ./kubernetes/deployment.yaml
 kubectl apply -f ./kubernetes/service.yaml
+
+
+# Forward port
+kubectl port-forward k8s-service-b-786497c75d-thplt 8001:8001

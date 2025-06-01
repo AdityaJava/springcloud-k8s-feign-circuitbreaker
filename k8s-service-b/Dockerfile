@@ -5,4 +5,4 @@ FROM eclipse-temurin:21-jdk-jammy
 COPY build/libs/*.jar app.jar
 
 # Set the startup command
-ENTRYPOINT ["java", "-jar", "/app.jar"]
+ENTRYPOINT ["java", "-jar", "/app.jar", "--spring.profiles.active=k8s"]
